@@ -1,0 +1,54 @@
+body {
+    background-color: #800000;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway-Thin.ttf");
+}
+
+.interglobal {
+    text-align: center;
+    font-family: "Raleway";
+    color: #FFD700;
+    margin: 25px;
+}
+
+h1#titulo {
+    font-weight: bolder;
+}
+
+.Ingresar{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Raleway";
+    color: grey;
+    font-size: 20px;
+}
+#log{
+position: relative;
+right: -280px;
+}
+label {
+    width: 180px;
+    clear: left;
+    text-align: center;
+    font-weight: bolder;
+}
+
+input, label {
+    float: left;
+}
+
+button#boton_login {
+    font-family: "Raleway";
+    font-weight: bolder;
+    position: absolute;
+    right: 45%;
+    bottom: 20%;
+    background-color: #800000;
+    border:0;
+    font-size: 30px;
+    color: grey;
+}

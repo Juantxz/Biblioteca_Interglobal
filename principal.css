@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway-Thin.ttf");
+}
+
+body {
+    background-color: blue;
+    font-family: "Raleway";
+}
+.formato{
+  text-align: center;
+  margin: auto;
+}
+#aceptar{
+  position:relative;
+  right: 100px;
+  bottom: -30px;
+}
+.logo{
+  position: relative;
+  text-align: center;
+  top: -400px;
+  right: -400px;
+  width: 400px;
+
+}
+a{
+  text-decoration: none;
+  color: #FFD700;
+
+
+}
+div{
+  margin-bottom : 60px;
+  color: #FFD700;
+
+}
+
+h3{
+  position: relative;
+  top: -25px;
+}
+div.lema{
+  position: relative;
+  text-align: center;
+  right: -125px;
+
+}
+/*SECCION REALIZAR PRESTAMO*/
+.Registrar{
+  position: relative;
+  text-align: center;
+  top: -400px;
+  right: -400px;
+  width: 400px;
+
+}
+label {
+    width: 180px;
+    clear: left;
+    text-align: center;
+    font-weight: bolder;
+}
+
+input, label {
+    float: left;
+}
