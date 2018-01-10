@@ -7,7 +7,7 @@ $(document).ready(function() {
         if (contador == 0) {
             $(".Busqueda").append(txt);
             $(".Busqueda").append(txt2);
-          holi
+          
             contador++;
 
             $("#lupa").click(function(event) {
