@@ -2,98 +2,93 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="principal.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="principal.css">
 
-    <title></title>
+  <title></title>
 </head>
 
 <body>
-    <script src="jquery-3.2.1.js" charset="utf-8"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-          $("#boton2").css("display","none");
+  <script src="jquery-3.2.1.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#boton2").css("display", "none");
 
-          var contador=0;
+      var contador = 0;
 
-  $("#tituloa").css("display","none");
-    $("#tituloc").css("display","none");
-      $("#tita").css("display","none");
-        $("#titc").css("display","none");
+      $("#tituloa").css("display", "none");
+      $("#tituloc").css("display", "none");
+      $("#tita").css("display", "none");
+      $("#titc").css("display", "none");
 
 
-          $("#boton").click(function(event) {
-            /* Act on the event */
-            contador++;
+      $("#boton").click(function(event) {
+        /* Act on the event */
+        contador++;
 
-            if(contador==1){
-            $("#tituloa").show();
-            $("#tita").show();
-            $("#boton2").show();
-
-          }
-          if(contador==2){
-        $("#tituloc").show();
-        $("#titc").show();
+        if (contador == 1) {
+          $("#tituloa").show();
+          $("#tita").show();
           $("#boton2").show();
-          $("#boton").css("display","none");
+
+        }
+        if (contador == 2) {
+          $("#tituloc").show();
+          $("#titc").show();
+          $("#boton2").show();
+          $("#boton").css("display", "none");
         }
 
 
 
 
-          });
+      });
 
-          $("#boton2").click(function(event) {
-            contador--;
-if(contador==0)
-{
-$("#boton2").css("display","none");
-  $("#tita").css("display","none");
-  $("#tituloa").css("display","none");
-    $("#tituloa").val("");
-}
+      $("#boton2").click(function(event) {
+        contador--;
+        if (contador == 0) {
+          $("#boton2").css("display", "none");
+          $("#tita").css("display", "none");
+          $("#tituloa").css("display", "none");
+          $("#tituloa").val("");
+        }
 
-if(contador==1)
-{
-  $("#titc").css("display","none");
-  $("#tituloc").css("display","none");
-    $("#tituloc").val("");
-    $("#boton").show();
+        if (contador == 1) {
+          $("#titc").css("display", "none");
+          $("#tituloc").css("display", "none");
+          $("#tituloc").val("");
+          $("#boton").show();
 
-}
+        }
 
 
 
 
-          });
-        });
-    </script>
-    <div id="Menu"></div>
-    <script src="menu.js" charset="utf-8"></script>
-    <script src="buscar.js" charset="utf-8"></script>
+      });
+    });
+  </script>
+  <div id="Menu"></div>
+  <script src="menu.js" charset="utf-8"></script>
+  <script src="buscar.js" charset="utf-8"></script>
 
-    <form class="" action="Registrar_Prestamo.php" method="post">
-        <div class="Registrar">
-            <label for="user">ID USUARIO</label>
-            <input type="text" name="user" id="user"><br>
-            <label for="titulo1" id="tit1">ID LIBRO</label>
-            <input type="text" name="titulo2" id="titulo1" required=""><br>
+  <div class="Registrar">
+    <label for="user">Matricula Alumno</label>
+    <input type="text" name="user" id="user"><br>
+    <label for="titulo1" id="tit1">ID LIBRO</label>
+    <input type="text" name="titulo2" id="titulo1" required=""><br>
 
-            <label for="tituloa" id="tita">ID LIBRO 2</label>
-            <input type="text" name="titulob" id="tituloa"><br>
+    <label for="tituloa" id="tita">ID LIBRO 2</label>
+    <input type="text" name="titulob" id="tituloa"><br>
 
-            <label for="tituloc" id="titc">ID LIBRO 3</label>
-            <input type="text" name="titulod" id="tituloc"><br>
+    <label for="tituloc" id="titc">ID LIBRO 3</label>
+    <input type="text" name="titulod" id="tituloc"><br>
 
-            <button type="button" id="boton">Agregar Libro</button>
-            <button type="button" id="boton2">Quitar Libro</button>
+    <button type="button" id="boton">Agregar Libro</button>
+    <button type="button" id="boton2">Quitar Libro</button>
 
-            <input type="submit" value="Listo">
+    <button type="button" id="prestar" name="button"></button>
 
-
-        </div>
-    </form>
+  </div>
 </body>
 
 </html>
