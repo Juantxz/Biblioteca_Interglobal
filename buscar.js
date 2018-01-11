@@ -1,21 +1,34 @@
 $(document).ready(function() {
-    var contador = 0;
-    $(".Busqueda").click(function(event) {
-        /* Act on the event */
-        txt = "<textarea id=libro></textarea>"
-        txt2 = "<img  src=search.png id=lupa>"
-        if (contador == 0) {
-            $(".Busqueda").append(txt);
-            $(".Busqueda").append(txt2);
-          
-            contador++;
+  var busqueda;
+  $("#libro").css('display', 'none');
+  $("#lupa").css('display', 'none');
+  $(".contenido").css('display', 'block');
+  $("#Buscar").click(function(event) {
+    $("#libro").toggle(500);
+    $("#lupa").toggle(500);
+    $("#lupa").click(function(event) {
+      /* Act on the event */
 
-            $("#lupa").click(function(event) {
-                alert($("#libro").val());
+      busqueda = $("#libro").val();
+      $.getJSON('libros.json?nocache=123', function(json) {
+        for (var i = 0; i < json.length; i++) {
+          if (json[i].TEMA1.includes(busqueda)) {
+            console.log("encontrado "+json[i].ID);
+              $(".contenido").append('<p>'+json[i].CLASIFICACION+'</p>')
 
-            });
+          }
         }
+      }).fail(function(d, Status, error) {
+        console.error(" status: " + Status + ", error: " + error)
+      });
+
+
+
+
+
     });
+
+  });
 
 
 });
