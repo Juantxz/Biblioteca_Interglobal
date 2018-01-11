@@ -3,13 +3,13 @@ $(document).ready(function() {
           /* Act on the event */
 
           var matricula = $("#user").val();
-          $.getJSON('alumnos.json?nocache=123', function(json) {
+          $.getJSON('usuarios.json?nocache=123', function(json) {
               for (var i = 0; i < json.length; i++) {
                 if (matricula == json[i].BOLETA) {
 
 
                   json.push({
-                      "BOLETA": matricula,
+                      "ID_USUARIO": matricula,
                       "NOMBRE": json[i].NOMBRE,
                       "CORREO": json[i].CORREO,
                       "LIBROS": [{
@@ -19,13 +19,13 @@ $(document).ready(function() {
 
                         },
                         {
-                          "ID": $("#titulo2") val(),
+                          "ID_USUARIO": $("#titulo2") val(),
                           "FECHA_ENTRADA": ["", "", ""],
                           "FECHA_SALIDA": ["", "", ""]
 
                         },
                         {
-                          "ID": $("#titulo3") val(),
+                          "ID_USUARIO": $("#titulo3") val(),
                           "FECHA_ENTRADA": ["", "", ""],
                           "FECHA_SALIDA": ["", "", ""]
 

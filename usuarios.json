@@ -1,5 +1,5 @@
 [{
-    "BOLETA": "ANGEL0102",
+    "ID_USUARIO": "ANGEL0102",
     "NOMBRE": "ANGEL AGUILERA",
     "CORREO": "angelaguilera@gmail.com",
     "LIBROS": [{
@@ -13,7 +13,7 @@
 
   },
   {
-    "BOLETA": "JUAN0102",
+    "ID_USUARIO": "JUAN0102",
     "NOMBRE": "JUAN BRIONES",
     "CORREO": "briones@gmail.com",
     "LIBROS": [{
