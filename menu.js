@@ -2,7 +2,7 @@ document.getElementById('Menu').innerHTML =
 
   '<div class="Busqueda">' +
   '<p  id="Buscar"><strong>Buscar<img src="sort-down.png" alt="" id=""></strong></p>' +
-  '<textarea id=libro></textarea>' + '<img  src=search.png id=lupa>' +
+  '<input type ="text" id="libro"></input>' + '<img  src=search.png id=lupa>' +
   '<div class="contenido">' + '</div>' +
   '</div>' +
   '<div class="Prestamo">' +

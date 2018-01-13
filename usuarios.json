@@ -1,0 +1,26 @@
+[{
+    "ID_USUARIO": "ANGEL0102",
+    "NOMBRE": "ANGEL AGUILERA",
+    "CORREO": "angelaguilera@gmail.com",
+    "LIBROS": [{
+        "ID": "PEDRO PARAMO",
+        "FECHA_ENTRADA": ["10", "01", "1998"],
+        "FECHA_SALIDA": ["","",""]
+
+      }
+
+    ]
+
+  },
+  {
+    "ID_USUARIO": "JUAN0102",
+    "NOMBRE": "JUAN BRIONES",
+    "CORREO": "briones@gmail.com",
+    "LIBROS": [{
+      "ID": "",
+      "FECHA_ENTRADA": "",
+      "FECHA_SALIDA": ""
+
+    }]
+  }
+]
